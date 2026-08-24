@@ -35,8 +35,9 @@ Before its first edit, the incoming session must play back — briefly, in its o
 gate items in SESSION-PROMPT.md, drawn from the docs and the repo, **not** from memory. The prompt
 phrases them as questions and **never states their own answers** — a gate that hands you the answer
 is passable by echo, which is the same failure as not reading. The items are constructed fresh at
-each handoff (SESSION-PROMPT.md carries the construction rules: non-guessable, session-fresh,
-at least one runnable, answers only in the docs, every primary doc touched).
+each handoff (this file carries the construction rules — see "Writing the next SESSION-PROMPT"
+below: non-guessable, session-fresh, at least one runnable, answers only in the docs, every
+primary doc touched).
 
 The human verifies the playback against the docs in seconds. If the session can't produce the
 items, it hasn't read them — it stops and reads. This isn't ceremony; it's the difference between
@@ -53,7 +54,9 @@ assignment, sent only once the receipt checks out. The split is structural.
 - **HANDOFF.md** — the living "where we are / what's next." Seeded at setup, revised at
   checkpoints, fully refreshed each handoff.
 - **SESSION-PROMPT.md** — the tight, paste-able two-message onboarding prompt for a fresh session.
-  Rewritten each handoff from its template.
+  Always the current *instance*: written at setup by the setup session (instance #1), then
+  archived and rewritten at each handoff per the construction rules below. (The unfilled
+  template retired to `archive/setup/` at birth.)
 - **`archive/handoffs/HANDOFF_<date>_<phase-or-theme>.md`** / **`SESSION-PROMPT_<…>.md`** —
   archived prior versions (never deleted; they live under `archive/handoffs/`, not the repo root).
 - **This file** — the process itself.
@@ -63,9 +66,29 @@ assignment, sent only once the receipt checks out. The split is structural.
 ### 1. Archive, then rewrite (never overwrite history)
 Before fully rewriting HANDOFF.md or SESSION-PROMPT.md at a handoff, copy the existing one into
 **`archive/handoffs/`** named for its date and phase or theme. The archive is append-only history;
-the two *current* docs live in root, all priors in the archive. (The first handoff archives the
-seeded version — the convention starts there. Checkpoint delta passes do NOT archive; only full
-handoff rewrites do.)
+the two *current* docs live in root, all priors in the archive. (The convention starts at BIRTH,
+not at the first handoff: setup's final act archives the generator and the unfilled SESSION-PROMPT
+template to `archive/setup/`. The first handoff then archives the seeded HANDOFF.md and
+SESSION-PROMPT instance #1 to `archive/handoffs/`. Checkpoint delta passes do NOT archive; only
+full handoff rewrites do.)
+
+### 1a. Writing the next SESSION-PROMPT (the construction rules — canonical copy)
+Every gate item in the rewritten SESSION-PROMPT.md must have ALL of these properties, or it
+isn't a gate item:
+  (a) **non-guessable** from training data or from the prompt itself — its answer exists only
+      in this repo's docs or state;
+  (b) at least two items **session-fresh** — things that changed this session (latest commit,
+      newest dated BUILD.md block, the current live thread), so the gate can't be passed from
+      a stale read;
+  (c) at least one item **runnable** — a command whose output proves the toolchain works (the
+      verification gate is ideal);
+  (d) the item **tells the reader where to look, but never states the answer** — a gate that
+      hands you the answer is passable by echo;
+  (e) between them, the items **touch every primary doc** — a doc no item touches is a doc
+      that won't get read.
+*(Session 1 only — normally already handled by the setup session, per the template it filled:
+setup-fresh substitutes for session-fresh, and if no verification gate exists yet, the runnable
+item is an honest report of its absence plus the task that creates it. Never simulated output.)*
 
 ### 2. The primaries are ALWAYS read-first
 File importance in "read first" is the AI's discretion — EXCEPT these, which are non-negotiable

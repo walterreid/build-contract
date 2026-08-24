@@ -26,12 +26,12 @@ no other file shares. That's the test for adding an eighth or merging any two.
 
 | File | Read when | Written when |
 |---|---|---|
-| `SETUP-PROMPT.md` | Once — after the project-idea conversation | Never (it's the generator) |
+| `SETUP-PROMPT.md` | Once — after the project-idea conversation | Never; retired to `archive/setup/` when setup completes |
 | `AGENTS.md` | Every session start | Rule amendments, new domain facts, file-map changes |
 | `BUILD.md` | Before every task | After every task; strain/drift/decision logs as they occur |
 | `DESIGN.md` | Before touching any UI | Direction Ledger entries, ratified amendments |
 | `HANDOFF.md` | Cold start (a new session's orientation) | Checkpoints + every handoff (revised, never rewritten from scratch) |
-| `SESSION-PROMPT.md` | Pasted by the human, two messages, into each new session | Rebuilt from its template at each handoff |
+| `SESSION-PROMPT.md` | Pasted by the human, two messages, into each new session | Born at setup (instance #1, by the setup session); archived + rewritten at each handoff |
 | `HANDOFF-PROCESS.md` | At every checkpoint and handoff | When the process itself improves |
 
 ## Quickstart
@@ -51,13 +51,15 @@ no other file shares. That's the test for adding an eighth or merging any two.
    - **Replace `README.md`** with your project's own.
 3. Have a real conversation with your AI about the project idea — the system is designed to
    formalize a good conversation, not to replace one.
-4. Paste `SETUP-PROMPT.md`, then the four templates it names (`AGENTS.md`, `BUILD.md`,
-   `DESIGN.md`, `HANDOFF.md`). Answer its Step 0 questions — it interrogates before it
-   writes.
-5. Commit the four generated documents alongside `HANDOFF-PROCESS.md` and the
-   `SESSION-PROMPT.md` template. `HANDOFF-PROCESS.md` is copied as-is and then filled in
-   two places — the verification gate in rule 3, and your project's stores in practice 5.
-   `archive/handoffs/` ships with the template — it is already there and empty.
+4. Paste `SETUP-PROMPT.md`, then the five templates it names (`AGENTS.md`, `BUILD.md`,
+   `DESIGN.md`, `HANDOFF.md`, `SESSION-PROMPT.md`). Answer its Step 0 questions — it
+   interrogates before it writes.
+5. Commit the five generated documents alongside `HANDOFF-PROCESS.md`, which is copied
+   as-is and then filled in two places — the verification gate in rule 3, and your
+   project's stores in practice 5. Setup's final act retires `SETUP-PROMPT.md` and the
+   unfilled `SESSION-PROMPT.md` template to `archive/setup/` (the archive convention's
+   first act — at birth, not at the first handoff), leaving root holding only living
+   documents. `archive/handoffs/` ships with the template — already there and empty.
 6. Nothing to do for Claude Code — `CLAUDE.md` ships with the template and holds a single
    `@AGENTS.md` import line. Claude Code reads CLAUDE.md natively and follows the import,
    so AGENTS.md stays the one contract and no second copy can drift from it. Delete
@@ -67,8 +69,8 @@ no other file shares. That's the test for adding an eighth or merging any two.
 against the docs (seconds) → paste Message 2. The split is structural; don't co-deliver.
 
 **Every handoff:** follow `HANDOFF-PROCESS.md` — pre-flight verification (run, never
-assert), archive-then-rewrite, and rebuild `SESSION-PROMPT.md` from its template with
-fresh gate items.
+assert), archive-then-rewrite, and rewrite `SESSION-PROMPT.md` with fresh gate items per
+the construction rules in `HANDOFF-PROCESS.md`.
 
 ## What "excellent" means here
 

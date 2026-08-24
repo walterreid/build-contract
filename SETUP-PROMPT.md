@@ -3,12 +3,13 @@
 Use this prompt after you've already discussed your project idea in this chat.
 Drop it in at the point where you're ready to formalize the build documents.
 
-What this generates: **AGENTS.md, BUILD.md, DESIGN.md, and a seeded HANDOFF.md** (four documents,
-not three — the handoff system is born at setup, not improvised at the end of a dying session).
-Two more files — **HANDOFF-PROCESS.md** and **SESSION-PROMPT.md** — are process documents this
-prompt does not generate. Copy them into the repo as-is, then fill HANDOFF-PROCESS.md's bracketed
-slots: the verification gate in rule 3, and the project's stores in practice 5. The documents this
-prompt *does* generate must reference them.
+What this generates: **AGENTS.md, BUILD.md, DESIGN.md, a seeded HANDOFF.md, and SESSION-PROMPT.md
+instance #1** (five documents — the handoff system AND its delivery mechanism are born at setup,
+not improvised at the end of a dying session; the setup session is the only author who can write
+day-zero gate items, because it alone holds the founding conversation and the docs it just wrote).
+One more file — **HANDOFF-PROCESS.md** — is a process document this prompt does not generate. Copy
+it into the repo as-is, then fill its bracketed slots: the verification gate in rule 3, and the
+project's stores in practice 5. The documents this prompt *does* generate must reference it.
 
 ---
 
@@ -90,6 +91,18 @@ A [TBD] I could have resolved in one sentence at setup is a debt every future se
 - This file exists from day one so no session ever writes it from scratch. Every session
   revises it; none authors it.
 
+**For SESSION-PROMPT.md (instance #1):**
+- Fill the SESSION-PROMPT template completely — every bracket, template notes deleted. The
+  result is the finished two-message prompt the human pastes to open the FIRST working
+  session. It is an instance, not a template: nothing in it may be addressed to an AI
+  filling it in.
+- Construct Message 1's 5–7 gate items per the template's construction rules, with the
+  session-1 substitutions the template defines: *setup-fresh* stands in for session-fresh
+  (the setup commit, a specific [ASSUMED] tag, the founding premise), and if no
+  verification gate exists yet, the runnable item is an honest report of its absence plus
+  the Phase 0 task that creates it — never simulated output.
+- Message 2 is Phase 0 marching orders, drawn from the BUILD.md you just wrote.
+
 ### General rules
 
 - Nuance is a feature. Don't flatten distinctions I've made in conversation.
@@ -108,19 +121,27 @@ A [TBD] I could have resolved in one sentence at setup is a debt every future se
 
 ### Step 2 — Close the loop
 
-After filling in all four documents:
+After filling in all five documents:
 1. List any remaining open questions — things I'd need to answer before you could fill
    in a [TBD] or correct an [ASSUMED].
 2. Confirm the wiring: AGENTS.md references BUILD.md as the to-do list and HANDOFF-PROCESS.md
    as the session contract; DESIGN.md's amendment path points at the Amendment Protocol in
-   AGENTS.md; HANDOFF.md references all of them. A document set that doesn't reference
-   itself falls apart the first time only one file gets read.
-3. Remind me to copy HANDOFF-PROCESS.md and SESSION-PROMPT.md into the repo. Claude Code
-   needs nothing extra: CLAUDE.md ships alongside AGENTS.md holding a single `@AGENTS.md`
-   import line, so AGENTS.md remains the one contract with no copy to drift.
+   AGENTS.md; HANDOFF.md references all of them; SESSION-PROMPT.md instance #1's gate items
+   touch every primary doc. A document set that doesn't reference itself falls apart the
+   first time only one file gets read.
+3. Remind me to copy HANDOFF-PROCESS.md into the repo and fill its two bracketed slots.
+   Claude Code needs nothing extra: CLAUDE.md ships alongside AGENTS.md holding a single
+   `@AGENTS.md` import line, so AGENTS.md remains the one contract with no copy to drift.
+4. Retire the setup artifacts — the archive convention's first act, at birth: copy the
+   unfilled SESSION-PROMPT template to `archive/setup/SESSION-PROMPT_TEMPLATE.md`, move
+   this file to `archive/setup/SETUP-PROMPT.md`, and note at the top of each which Build
+   Contract version stamped this project (the template repo's tag). Then instance #1
+   replaces SESSION-PROMPT.md at root. Root ends the day holding only living documents.
+   (If I'm running you somewhere without repo access, list these moves for me to make.)
 
 ---
 
 ## Templates
 
-Paste the contents of AGENTS.md, BUILD.md, DESIGN.md, and HANDOFF.md after this line.
+Paste the contents of AGENTS.md, BUILD.md, DESIGN.md, HANDOFF.md, and SESSION-PROMPT.md
+(the template — its bracketed construction rules are part of what you're pasting) after this line.

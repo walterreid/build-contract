@@ -1,9 +1,13 @@
 # SESSION-PROMPT.md — the onboarding prompt for a fresh session
 
-[TEMPLATE NOTE — for the AI writing this at handoff time: fill every bracket, then delete
-the template notes. The two-message structure and the gate are structural — keep them.
-Construct the gate items yourself, per the rules in the gate section. The finished file is
-what the human pastes; it should contain nothing addressed to you.]
+[TEMPLATE NOTE — for the AI writing this file: the SETUP session at project birth
+(instance #1 — you have the founding conversation and the docs you just wrote; no one else
+can author day-zero gate items), or the OUTGOING session at each handoff after that. Fill
+every bracket, then delete the template notes. The two-message structure and the gate are
+structural — keep them. Construct the gate items yourself, per the rules in the gate
+section (canonical copy for handoff time: HANDOFF-PROCESS.md, "Writing the next
+SESSION-PROMPT" — after setup, this template lives only in archive/setup/). The finished
+file is what the human pastes; it should contain nothing addressed to you.]
 
 > **Delivered in TWO messages, on purpose — paste Message 1 alone, wait for the read-receipt
 > to check out, THEN paste Message 2.** The split isn't cosmetic: the read-receipt gate does
@@ -60,6 +64,13 @@ ALL of these properties, or it isn't a gate item:
   (d) the item TELLS the reader where to look, but NEVER states the answer;
   (e) between them, the items must touch every primary doc — a doc no item touches is
       a doc that won't get read.
+SESSION-1 CLAUSE (instance #1 only — two properties go degenerate at birth):
+  (b′) session-fresh becomes SETUP-FRESH — the setup commit, a specific [ASSUMED] tag,
+      the founding premise and its tier; nothing has happened yet, so freshness means
+      "ratified today," not "changed this session."
+  (c′) if no verification gate exists yet, the runnable item is an HONEST REPORT of its
+      absence plus the Phase 0 task that creates it ("no gate exists; creating it is task
+      0.1") — which doubles as a fabrication check on day one. Never simulate output.
 The shape that has worked:]
 1. [The project's most load-bearing INVARIANT — which rule, and what must happen when
    [its most commonly violated condition] occurs. (AGENTS.md + [where it bites in code].)]
