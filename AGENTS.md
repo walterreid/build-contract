@@ -37,6 +37,13 @@ The **Protects:** line is the rule's reason for existing. When a rule comes unde
 the conversation is about whether the protected thing still needs protecting (or is now
 protected some other way) — not about the rule's wording.
 
+A Protects: line may not name the rule's own premise as the protected thing — "protects
+the [hard-edges] direction" is a rule protecting itself. It must name something *outside*
+the rule: a person, a correctness property, a capability, a future option. If the only
+honest completion is "the direction itself," it is a preference wearing a rule's clothes —
+demote it (and if it is genuinely design-direction taste, it belongs in DESIGN.md, bound
+to the Direction Ledger entry it enforces).
+
 ### 1. [RULE NAME — e.g. NO HARDCODING] — [INVARIANT or DIRECTION]
 [The rule stated plainly.]
 
@@ -133,9 +140,21 @@ Rules are a contract between friends. Neither party edits the contract alone.
 Write it as if explaining to a smart developer who has never encountered this domain.
 Correct misunderstandings before they happen. Every fact here should be something
 that, if wrong, would produce subtly incorrect behavior that passes tests but fails
-in production or in real use.]
+in production or in real use.
+
+Every `###` concept below carries a **Status:** stamp — the facts a session must not
+contradict include the fact that some of them are designs:
+- `DESIGNED (unexecuted)` — behavior we invented; nothing has run it yet.
+- `REPORTED (source, date)` — a fact about the world supplied from outside (usually the
+  human); real, but unverified by this project.
+- `PARTIALLY VERIFIED (name what ran)` / `OBSERVED (name where)` — upgraded ONLY by naming
+  the run, test, or playtest that observed it. An unstamped upgrade is drift — log it.
+Stamps track *verification*; `[ASSUMED: reason]` still flags facts inferred rather than
+told, and `[TBD]` still marks unknowns — a fact can carry a stamp and a flag. If one
+subsection's facts diverge in status, split the subsection.]
 
 ### [Core Concept 1]
+**Status:** [DESIGNED (unexecuted) | REPORTED (source) | PARTIALLY VERIFIED (what ran) | OBSERVED (where)]
 [Define it. Give the formula or rule if there is one. Note the edge cases.]
 
 ### [Core Concept 2]

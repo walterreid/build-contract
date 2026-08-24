@@ -49,6 +49,10 @@ A [TBD] I could have resolved in one sentence at setup is a debt every future se
 - Domain Knowledge should capture any non-obvious facts about how the game/product
   actually works — the model, the math, the vocabulary. If I used domain-specific
   language in our conversation, define it here.
+- Stamp every Domain Knowledge concept's **Status:** at birth: `REPORTED (source)` for
+  facts about the world I supplied; `DESIGNED (unexecuted)` for behavior we invented that
+  nothing has run yet. Nothing gets `PARTIALLY VERIFIED` or `OBSERVED` at setup — nothing
+  has run. Do not misfile an invented mechanic as a world-fact.
 - Architecture Decisions should only include choices that are genuinely settled.
   If I haven't decided yet, flag it as DECISION NEEDED in BUILD.md instead.
 - "What Done Means" should be concrete and project-specific. Not generic checklists.

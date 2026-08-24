@@ -104,6 +104,9 @@ Document the *delivered* state, not the intended one. Before writing the full ha
   project acquires them; this list is part of what this file accumulates.]**
 - **`git status` clean** — name the expected exceptions explicitly (build outputs, the human's
   local rigs). If a *tracked* file is uncommitted, surface it and ASK.
+- **Stamp upgrades** — if this session executed something AGENTS.md stamps `DESIGNED`
+  (or confirmed/contradicted a `REPORTED` fact), upgrade its stamp naming the run. A stamp
+  upgrade is a finding; an unstamped upgrade is drift.
 - Note the session's commit range (first → last).
 If a gate legitimately moved because of a content change, that's a *finding* — record it in
 BUILD.md, don't bury it.

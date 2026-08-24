@@ -246,6 +246,14 @@ Offline:  [how does the UI communicate connection loss?]
 These are violations. No exceptions while they stand. They come in two tiers — **enforced
 identically**, amended differently (AGENTS.md → Amendment Protocol):
 
+[A *Protects:* line may not name the rule's own aesthetic as the protected thing —
+"protects the [hard-edges] premise" is a rule protecting itself. It must point outside the
+rule: a user, a meaning the interface depends on, the governing principle. The correct form
+looks like *Protects: red's meaning — scarcity is what makes it land*, or *Protects: [the
+philosophy's principle] — every pixel states a fact*. If the only honest completion is "the
+direction itself," the item is direction-taste: keep it, but as a line in the Direction
+Ledger entry it enforces — not dressed in a Protects: line here.]
+
 ### Design Invariants
 [Rules that protect users, accessibility, information integrity, or the theme system
 itself. These survive direction changes — v1 editorial or v5 SaaS, these hold. Amending
@@ -276,4 +284,5 @@ comply, log, and at three strains, raise it.]
 
 [The combined list should be 6–12 items. Fewer means the design system isn't specific
 enough. More means some aren't really rules. If an item can't name what it protects,
-it's taste — and taste lives in the philosophy section, not the law.]
+it's taste: generic taste lives in the philosophy section; direction-bound taste lives in
+the Direction Ledger entry it enforces. Neither lives here, in the law.]
