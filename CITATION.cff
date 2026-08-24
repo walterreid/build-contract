@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use or adapt the Build Contract, please cite it as below and link back to the repository."
+title: "The Build Contract"
+abstract: >-
+  A seven-document system for long, multi-session AI builds — designed to be excellent at
+  the first 90% (getting a project moving fast from a good conversation) and, harder, at
+  the last 10% (staying honest, coherent, and on-taste across dozens of sessions, context
+  resets, and the design pivots every real project eventually makes). Rules are tiered and
+  amendable through a logged protocol rather than quiet erosion; the handoff document is
+  maintained from day zero rather than written at the ragged end of a dying context; and a
+  fresh session proves it read the documents before it is given the assignment.
+authors:
+  - family-names: "Reid"
+    given-names: "Walter"
+license: CC-BY-4.0
+repository-code: "https://github.com/walterreid/build-contract"
+url: "https://github.com/walterreid/build-contract"
+keywords:
+  - ai-assisted-development
+  - agentic-coding
+  - session-handoff
+  - context-management
+  - llm-agents
+  - agents-md
+  - documentation-system
+  - project-template
+# Uncomment and fill both at the first tagged public release:
+# version: "1.0.0"
+# date-released: "2026-08-23"

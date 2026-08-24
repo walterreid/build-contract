@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local AI-tool state (the symlink CLAUDE.md -> AGENTS.md is intentional and IS tracked)
+.claude/settings.local.json
