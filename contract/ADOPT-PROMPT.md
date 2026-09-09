@@ -101,7 +101,9 @@ filling the five templates in `contract/`, with these deltas:
 
 ## STAGE 4 — The move (the order IS the mistake-proofing), then the receipt
 
-1. **Archive first, move second, delete never.** Superseded originals go to
+1. **Archive first, move second, delete never.** Place the archive by moving
+   `contract/archive/` to the project root (the skeleton ships inside the staging —
+   assume nothing about the destination). Superseded originals then go to
    `archive/adoption/`, with a `MANIFEST.md`: each file's original path and its fate
    (archived / merged into X / superseded by Y) and why. Future tombstones may cite these.
 2. **Move the ratified set to root:** the five generated documents; HANDOFF-PROCESS.md

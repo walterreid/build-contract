@@ -142,8 +142,10 @@ After filling in all five documents:
    `@AGENTS.md` import line, so AGENTS.md remains the one contract with no copy to
    drift.
 4. Retire the staging — the archive convention's first act, at birth: the five filled
-   documents land at root, and the entire `contract/` folder (generator, unfilled
-   templates, the unused ADOPT on-ramp) moves to `archive/setup/contract/`, with the
+   documents land at root; `contract/archive/` moves to the repo root (the skeleton
+   ships inside the staging — assume nothing about the destination); then the entire
+   `contract/` folder (generator, unfilled templates, the unused ADOPT on-ramp) moves
+   into `archive/setup/contract/`, with the
    Build Contract version that stamped this project (the template repo's tag) noted at
    the top of the archived copy of this file. SESSION-PROMPT.md at root is instance #1.
    Root ends the day holding only living documents. (If I'm running you somewhere

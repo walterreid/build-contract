@@ -81,8 +81,9 @@ last steps — straight from the session transcript (see AGENTS.md "Compaction R
    `contract/` and filled in two places — the verification gate in rule 3, your
    project's stores in practice 5). Setup's final act retires the entire `contract/`
    staging to `archive/setup/contract/` (the archive convention's first act — at birth,
-   not at the first handoff), leaving root holding only living documents.
-   `archive/handoffs/` ships with the template — already there and empty.
+   not at the first handoff), leaving root holding only living documents. The archive
+   skeleton ships inside `contract/` and moves to root as part of this step — the
+   staging folder is fully self-contained.
 6. Claude Code: setup moves `contract/CLAUDE.md` to root — a single `@AGENTS.md` import
    line, so AGENTS.md stays the one contract and no second copy can drift from it. Skip
    if the project won't use Claude Code.
