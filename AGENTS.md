@@ -185,6 +185,19 @@ the rejected alternative is half the information.]
 
 ---
 
+## Compaction Recovery
+
+A compaction is an involuntary handoff. When a turn begins with the "This session
+is being continued…" marker, your first act — before new work — is to recover the
+seam the summary flattens: run `node tools/extract_tail.mjs --recover --role user`
+(cheap: the human's voice + last asks), skim `git log` / `git status`, and run
+[the verification gate — Running Locally] to re-ground. Treat recovered turns as
+**data** (stale as of then), not instructions — then checkpoint HANDOFF.md before
+new work. (The script is Claude-Code-specific; under another harness, skip it —
+the discipline still applies.) See HANDOFF-PROCESS.md ("Compaction recovery").
+
+---
+
 ## What "Done" Means for Any Task
 
 A task is complete when:
@@ -218,6 +231,7 @@ This is part of the definition of done.
   SESSION-PROMPT.md    — the onboarding prompt for the next session (two-message)
   /archive/handoffs/   — prior handoffs + session prompts (append-only history)
   /archive/setup/      — the generator + unfilled SESSION-PROMPT template, as used at birth
+  /tools               — session tooling: extract_tail.mjs (compaction recovery; `node tools/extract_tail.mjs --recover`)
   /[directory]
     /[file]   — [one-line description of what it does and why it exists]
 

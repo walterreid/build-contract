@@ -34,6 +34,10 @@ no other file shares. That's the test for adding an eighth or merging any two.
 | `SESSION-PROMPT.md` | Pasted by the human, two messages, into each new session | Born at setup (instance #1, by the setup session); archived + rewritten at each handoff |
 | `HANDOFF-PROCESS.md` | At every checkpoint and handoff | When the process itself improves |
 
+`tools/extract_tail.mjs` is the companion for the handoff nobody chooses: after a context
+compaction, it recovers the turns the summary flattened — the human's voice and the exact
+last steps — straight from the session transcript (see AGENTS.md "Compaction Recovery").
+
 ## Quickstart
 
 **Starting a project:**
@@ -84,7 +88,8 @@ the construction rules in `HANDOFF-PROCESS.md`.
 
 ## License & attribution
 
-Templates and process documents: **CC BY 4.0** (see `LICENSE`). Attribution travels with
+Templates and process documents: **CC BY 4.0**; session tooling in `tools/`: **MIT**
+(both in `LICENSE`). Attribution travels with
 the documents — when you copy these templates into a project, keep the attribution line
 each copy should carry:
 
