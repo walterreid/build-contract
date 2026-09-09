@@ -19,14 +19,21 @@ It rests on three ideas:
    reproducing non-guessable, session-fresh specifics — with the assignment withheld until
    the receipt clears, so the gate also catches *reading toward the goal*.
 
+Two on-ramps, one destination: `SETUP-PROMPT.md` starts a project from a good
+conversation; `ADOPT-PROMPT.md` brings the contract to a project already underway —
+mid-flight, at the last 10%, when nothing written down can be taken on faith. Both end
+in the same seven living documents.
+
 ## The files
 
 Each file exists because it owns a distinct **moment** — a read trigger and a write trigger
-no other file shares. That's the test for adding an eighth or merging any two.
+no other file shares. That's the test for adding a file or merging any two (ADOPT-PROMPT.md
+passed it as the second on-ramp: birth and adoption are different moments).
 
 | File | Read when | Written when |
 |---|---|---|
 | `SETUP-PROMPT.md` | Once — after the project-idea conversation | Never; retired to `archive/setup/` when setup completes |
+| `ADOPT-PROMPT.md` | Once — when bringing the contract to a project already underway | Never; retires with the `contract/` staging into `archive/adoption/` |
 | `AGENTS.md` | Every session start | Rule amendments, new domain facts, file-map changes |
 | `BUILD.md` | Before every task | After every task; strain/drift/decision logs as they occur |
 | `DESIGN.md` | Before touching any UI | Direction Ledger entries, ratified amendments |
@@ -68,6 +75,18 @@ last steps — straight from the session transcript (see AGENTS.md "Compaction R
    `@AGENTS.md` import line. Claude Code reads CLAUDE.md natively and follows the import,
    so AGENTS.md stays the one contract and no second copy can drift from it. Delete
    `CLAUDE.md` if the project won't use Claude Code.
+
+**Adopting a project already underway:**
+1. Commit everything — adoption never runs on an uncommitted tree.
+2. Stage the contract where nothing can collide:
+   `git clone --depth 1 https://github.com/walterreid/build-contract contract && rm -rf contract/.git`
+3. Paste `contract/ADOPT-PROMPT.md` into a session **with repo access** and generous
+   context. It reads before it writes, in order of authority: running behavior, code,
+   git history — and existing docs last, as testimony to verify, not truth to inherit.
+4. Answer its interrogation. Every excavated rule is a candidate until you ratify it.
+5. It archives the old docs to `archive/adoption/` (never deletes), moves the ratified
+   documents to root, retires `contract/`, and hands you SESSION-PROMPT instance #1.
+   Same destination as a birth — with better-verified facts.
 
 **Every session:** paste `SESSION-PROMPT.md` Message 1 alone → verify the read-receipt
 against the docs (seconds) → paste Message 2. The split is structural; don't co-deliver.

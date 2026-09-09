@@ -231,6 +231,7 @@ This is part of the definition of done.
   SESSION-PROMPT.md    — the onboarding prompt for the next session (two-message)
   /archive/handoffs/   — prior handoffs + session prompts (append-only history)
   /archive/setup/      — the generator + unfilled SESSION-PROMPT template, as used at birth
+  /archive/adoption/   — pre-contract docs + the contract/ staging (adopted projects only)
   /tools               — session tooling: extract_tail.mjs (compaction recovery; `node tools/extract_tail.mjs --recover`)
   /[directory]
     /[file]   — [one-line description of what it does and why it exists]

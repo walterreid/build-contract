@@ -2,6 +2,8 @@
 
 Use this prompt after you've already discussed your project idea in this chat.
 Drop it in at the point where you're ready to formalize the build documents.
+(For a project already underway — code exists, docs may lie — use ADOPT-PROMPT.md
+instead; it ends in the same documents.)
 
 What this generates: **AGENTS.md, BUILD.md, DESIGN.md, a seeded HANDOFF.md, and SESSION-PROMPT.md
 instance #1** (five documents — the handoff system AND its delivery mechanism are born at setup,
@@ -138,8 +140,9 @@ After filling in all five documents:
    `@AGENTS.md` import line, so AGENTS.md remains the one contract with no copy to drift.
 4. Retire the setup artifacts — the archive convention's first act, at birth: copy the
    unfilled SESSION-PROMPT template to `archive/setup/SESSION-PROMPT_TEMPLATE.md`, move
-   this file to `archive/setup/SETUP-PROMPT.md`, and note at the top of each which Build
-   Contract version stamped this project (the template repo's tag). Then instance #1
+   this file and ADOPT-PROMPT.md (the unused on-ramp) to `archive/setup/`, and note at
+   the top of each which Build Contract version stamped this project (the template
+   repo's tag). Then instance #1
    replaces SESSION-PROMPT.md at root. Root ends the day holding only living documents.
    (If I'm running you somewhere without repo access, list these moves for me to make.)
 
