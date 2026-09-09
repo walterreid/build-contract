@@ -110,8 +110,11 @@ filling the five templates in `contract/`, with these deltas:
    copied from `contract/` with its two bracketed slots filled (rule 3's verification
    gate, practice 5's stores); `contract/tools/` to root `tools/`; and `contract/CLAUDE.md`
    to root — the one-line `@AGENTS.md` pointer (an existing CLAUDE.md's content was mined
-   in Stage 1; the original is in the archive). The project's own README.md STAYS —
-   adoption never touches it.
+   in Stage 1; the original is in the archive). The project's own README.md is never
+   REPLACED — its front-page identity is the human's, and no template file stands in for
+   it. *Editing* it is ordinary ratified work: drift found in Stage 1, or sections the
+   new AGENTS.md now owns, get fixed like anything else — original archived first, human's
+   go first.
 3. **Retire the staging:** `contract/` → `archive/adoption/contract/`, with the template
    tag recorded in the MANIFEST. Root now holds living documents only.
 4. **The receipt:** run the verification gate and report what it printed; `git status`
