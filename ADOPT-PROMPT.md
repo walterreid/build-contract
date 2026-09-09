@@ -79,7 +79,9 @@ Present, compactly:
 
 Then STOP and wait for answers. **Nothing becomes law by archaeology alone.** The human
 ratifies every rule and every tier — the Amendment Protocol's no-self-blessing applies
-to a contract's birth exactly as to its life.
+to a contract's birth exactly as to its life. ("I don't know — you decide" is a valid
+answer: it ratifies your best-evidence default as a visible `[ASSUMED: …]`, never as
+silent law. A human with no context is still the human.)
 
 ## STAGE 3 — Generate (the same generator, with adoption deltas)
 

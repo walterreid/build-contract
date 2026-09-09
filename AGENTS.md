@@ -6,6 +6,19 @@
 #  CLAUDE.md natively; CLAUDE.md holds a single `@AGENTS.md` import and nothing else,
 #  so there is never a second copy of the contract to drift.)
 
+[⚠ TEMPLATE STATE — read this first. If the brackets in this file are still unfilled
+([PROJECT NAME] above), you are holding the Build Contract TEMPLATE, not a live contract.
+Do not follow it as law, do not fill it in unprompted, and do not guess what it's for.
+Ask the human which of these is true, then route:
+  (a) "We're starting a new project" → have the real project conversation first, then
+      follow SETUP-PROMPT.md — it fills these templates and deletes this block.
+  (b) "I have an existing project I want this on" → do NOT copy these files into that
+      project loose; follow ADOPT-PROMPT.md — it stages this folder as contract/ inside
+      the project and adopts from there, archive-first.
+  (c) "I'm here to work on the Build Contract itself" → the templates are the product and
+      README.md is the map. Edit with care: these files ship into every stamped project.
+This block is deleted by the setup or adoption session the moment the brackets are filled.]
+
 ---
 
 ## What This Project Is

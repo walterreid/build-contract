@@ -40,6 +40,8 @@ A [TBD] I could have resolved in one sentence at setup is a debt every future se
 ### Step 1 — Fill the templates
 
 **For AGENTS.md:**
+- Delete the [⚠ TEMPLATE STATE] routing block at the top — it exists only while the
+  brackets are unfilled, and a live contract must not carry installer noise.
 - The "What This Project Is" section should be specific enough that a developer
   who has never spoken to me could orient themselves in 60 seconds. Not a pitch —
   a map.

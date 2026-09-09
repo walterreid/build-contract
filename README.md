@@ -5,6 +5,15 @@ the first 90% (getting a project moving fast from a good conversation) and, hard
 last 10% (staying honest, coherent, and on-taste across dozens of sessions, context resets,
 and the design pivots every real project eventually makes).
 
+**Three doors** (details in the Quickstart below):
+1. **New project** → create a repo from this template (*Use this template*), talk the
+   idea through with your AI, then paste `SETUP-PROMPT.md`.
+2. **Existing project** → never copy these files into it loose — they'd collide with
+   your own README and BUILD. Stage the whole thing as `contract/` inside your repo and
+   paste `contract/ADOPT-PROMPT.md`; it does the rest, archive-first.
+3. **An AI dropped into this folder cold, unsure if it's running this or improving it**
+   → AGENTS.md's header routes you; ask your human the one question it gives you.
+
 It rests on three ideas:
 
 1. **Rules are a contract between friends.** The AI enforces standing rules absolutely —
