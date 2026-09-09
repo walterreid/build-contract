@@ -12,7 +12,8 @@ and the design pivots every real project eventually makes).
    files — into your repo's root and paste `contract/ADOPT-PROMPT.md`; it does the rest,
    archive-first. Nothing collides with your own README or BUILD.
 3. **An AI dropped into this folder cold, unsure if it's running this or improving it**
-   → the root `CLAUDE.md` routes you; ask your human the one question it gives you.
+   → `contract/START-HERE.md` is the front door; ask your human the one question it
+   gives you.
 
 It rests on three ideas:
 
@@ -82,9 +83,9 @@ last steps — straight from the session transcript (see AGENTS.md "Compaction R
    staging to `archive/setup/contract/` (the archive convention's first act — at birth,
    not at the first handoff), leaving root holding only living documents.
    `archive/handoffs/` ships with the template — already there and empty.
-6. Claude Code: setup replaces the root router `CLAUDE.md` with `contract/CLAUDE.md` —
-   a single `@AGENTS.md` import line, so AGENTS.md stays the one contract and no second
-   copy can drift from it. Skip if the project won't use Claude Code.
+6. Claude Code: setup moves `contract/CLAUDE.md` to root — a single `@AGENTS.md` import
+   line, so AGENTS.md stays the one contract and no second copy can drift from it. Skip
+   if the project won't use Claude Code.
 
 **Adopting a project already underway:**
 1. Commit everything — adoption never runs on an uncommitted tree.
