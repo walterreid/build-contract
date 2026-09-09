@@ -9,8 +9,12 @@ especially at the last 10%, when the project is real, the context is deep, and n
 written down can be taken on faith — a prior session may have written README.md or
 BUILD.md from what it *thought* was good.
 
-**Status: DESIGNED (unexecuted), 2026-09-09** — no real adoption has run yet. After the
-first one, upgrade this line naming the project it ran on, per the stamp discipline.
+**Status: PARTIALLY VERIFIED — first real adoption: MERIDIAN (Roblox game, 24 commits,
+149 tests), 2026-09-09.** Ran clean end-to-end: two drift finds died in the rewrite, the
+receipt caught a staging stumble, and a strain on the README rule was raised, not
+swallowed (amended upstream, v1.2.3). Still unexecuted: a COLD adopter (MERIDIAN's was
+the incumbent), and a messy repo whose rules need excavating rather than tiering.
+Upgrade further as those run.
 
 **Requires:** a session WITH REPO ACCESS and generous context. Adoption spends context
 deliberately — understanding the repo better than its own docs do is the product. The
@@ -116,7 +120,7 @@ filling the five templates in `contract/`, with these deltas:
    new AGENTS.md now owns, get fixed like anything else — original archived first, human's
    go first.
 3. **Retire the staging:** `contract/` → `archive/adoption/contract/`, with the template
-   tag recorded in the MANIFEST. Root now holds living documents only.
+   tag — it's in `contract/VERSION` — recorded in the MANIFEST. Root now holds living documents only.
 4. **The receipt:** run the verification gate and report what it printed; `git status`
    must show exactly the change-set the MANIFEST predicts; AGENTS.md's file map matches
    reality (including `archive/adoption/`); commit as its own commit

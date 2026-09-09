@@ -26,6 +26,7 @@ Build Contract itself?"* — then route:
 with AGENTS.md's Golden Rules preamble and HANDOFF-PROCESS.md; they are the product.
 Adoption only ever begins on the human's explicit go, after its Stage 2 interrogation.
 
-**Version:** the git tag this folder was copied from — adoption records it in
-`archive/adoption/MANIFEST.md`. There are no versioned folder names and no archived old
-copies here; the source repo's tags and history already do that job.
+**Version:** in `VERSION`, right here in this folder — a copied folder carries no git
+tag, so the tag travels as a file (learned from the first adoption, whose MANIFEST had a
+[TBD] where the version belonged). Adoption records it in `archive/adoption/MANIFEST.md`.
+No versioned folder names, no archived old copies: the source repo's tags do that job.
