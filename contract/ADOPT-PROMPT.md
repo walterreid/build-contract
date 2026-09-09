@@ -22,12 +22,13 @@ chat-only path is birth-only; use SETUP-PROMPT.md there.
 
 1. **Commit everything.** `git status` clean, or every exception named on purpose.
    Adoption never runs on an uncommitted tree — git is the rollback.
-2. **Stage the contract where nothing can collide:**
+2. **Stage the contract where nothing can collide** — copy just the `contract/` folder
+   from the Build Contract repo into your project root:
    ```bash
-   git clone --depth 1 https://github.com/walterreid/build-contract contract && rm -rf contract/.git
+   git clone --depth 1 https://github.com/walterreid/build-contract /tmp/bc && cp -R /tmp/bc/contract ./contract && rm -rf /tmp/bc
    ```
-   (or unzip a release into `contract/`). Nothing at root is touched yet — your existing
-   README.md, BUILD.md, or CLAUDE.md are safe where they stand.
+   (or download the repo zip and copy `contract/` out of it). Nothing at root is touched —
+   your existing README.md, BUILD.md, or CLAUDE.md are safe where they stand.
 3. Open a fresh session with repo access and paste this file.
 4. **Optional but valuable — the incumbent dossier.** If the session that got you here
    still lives, have IT write a short dump before it dies: decisions made and why, rules
@@ -105,10 +106,10 @@ filling the five templates in `contract/`, with these deltas:
    (archived / merged into X / superseded by Y) and why. Future tombstones may cite these.
 2. **Move the ratified set to root:** the five generated documents; HANDOFF-PROCESS.md
    copied from `contract/` with its two bracketed slots filled (rule 3's verification
-   gate, practice 5's stores); `contract/tools/` to root `tools/`; and CLAUDE.md as the
-   one-line `@AGENTS.md` pointer (an existing CLAUDE.md's content was mined in Stage 1;
-   the original is in the archive). The project's own README.md STAYS — the template's
-   README/CITATION/LICENSE never leave `contract/`.
+   gate, practice 5's stores); `contract/tools/` to root `tools/`; and `contract/CLAUDE.md`
+   to root — the one-line `@AGENTS.md` pointer (an existing CLAUDE.md's content was mined
+   in Stage 1; the original is in the archive). The project's own README.md STAYS —
+   adoption never touches it.
 3. **Retire the staging:** `contract/` → `archive/adoption/contract/`, with the template
    tag recorded in the MANIFEST. Root now holds living documents only.
 4. **The receipt:** run the verification gate and report what it printed; `git status`
@@ -118,4 +119,5 @@ filling the five templates in `contract/`, with these deltas:
 5. Hand the human SESSION-PROMPT instance #1. **Adoption is complete when a cold session
    passes the read-receipt gate** — the same bar birth is held to.
 
-Keep the one-line attribution in the generated documents (see contract/LICENSE).
+Keep the one-line attribution in the generated documents (CC BY 4.0 — the Build
+Contract repo's LICENSE).

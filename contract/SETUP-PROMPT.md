@@ -137,16 +137,17 @@ After filling in all five documents:
    AGENTS.md; HANDOFF.md references all of them; SESSION-PROMPT.md instance #1's gate items
    touch every primary doc. A document set that doesn't reference itself falls apart the
    first time only one file gets read.
-3. Remind me to copy HANDOFF-PROCESS.md into the repo and fill its two bracketed slots.
-   Claude Code needs nothing extra: CLAUDE.md ships alongside AGENTS.md holding a single
-   `@AGENTS.md` import line, so AGENTS.md remains the one contract with no copy to drift.
-4. Retire the setup artifacts — the archive convention's first act, at birth: copy the
-   unfilled SESSION-PROMPT template to `archive/setup/SESSION-PROMPT_TEMPLATE.md`, move
-   this file and ADOPT-PROMPT.md (the unused on-ramp) to `archive/setup/`, and note at
-   the top of each which Build Contract version stamped this project (the template
-   repo's tag). Then instance #1
-   replaces SESSION-PROMPT.md at root. Root ends the day holding only living documents.
-   (If I'm running you somewhere without repo access, list these moves for me to make.)
+3. Remind me to move contract/HANDOFF-PROCESS.md to the repo root and fill its two
+   bracketed slots. For Claude Code, replace the root router CLAUDE.md with
+   contract/CLAUDE.md — a single `@AGENTS.md` import line, so AGENTS.md remains the one
+   contract with no copy to drift.
+4. Retire the staging — the archive convention's first act, at birth: the five filled
+   documents land at root, and the entire `contract/` folder (generator, unfilled
+   templates, the unused ADOPT on-ramp) moves to `archive/setup/contract/`, with the
+   Build Contract version that stamped this project (the template repo's tag) noted at
+   the top of the archived copy of this file. SESSION-PROMPT.md at root is instance #1.
+   Root ends the day holding only living documents. (If I'm running you somewhere
+   without repo access, list these moves for me to make.)
 
 ---
 

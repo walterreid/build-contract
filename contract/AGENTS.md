@@ -12,9 +12,9 @@ Do not follow it as law, do not fill it in unprompted, and do not guess what it'
 Ask the human which of these is true, then route:
   (a) "We're starting a new project" → have the real project conversation first, then
       follow SETUP-PROMPT.md — it fills these templates and deletes this block.
-  (b) "I have an existing project I want this on" → do NOT copy these files into that
-      project loose; follow ADOPT-PROMPT.md — it stages this folder as contract/ inside
-      the project and adopts from there, archive-first.
+  (b) "I have an existing project I want this on" → copy this contract/ folder — the
+      whole folder, never loose files — into that project's root, then follow
+      ADOPT-PROMPT.md inside it, archive-first.
   (c) "I'm here to work on the Build Contract itself" → the templates are the product and
       README.md is the map. Edit with care: these files ship into every stamped project.
 This block is deleted by the setup or adoption session the moment the brackets are filled.]
@@ -243,7 +243,7 @@ This is part of the definition of done.
   HANDOFF-PROCESS.md   — the session-handoff contract
   SESSION-PROMPT.md    — the onboarding prompt for the next session (two-message)
   /archive/handoffs/   — prior handoffs + session prompts (append-only history)
-  /archive/setup/      — the generator + unfilled SESSION-PROMPT template, as used at birth
+  /archive/setup/      — the contract/ staging (generator + unfilled templates), as used at birth
   /archive/adoption/   — pre-contract docs + the contract/ staging (adopted projects only)
   /tools               — session tooling: extract_tail.mjs (compaction recovery; `node tools/extract_tail.mjs --recover`)
   /[directory]

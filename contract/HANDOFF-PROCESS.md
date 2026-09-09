@@ -83,8 +83,8 @@ another harness, skip it — the discipline still applies.)
 Before fully rewriting HANDOFF.md or SESSION-PROMPT.md at a handoff, copy the existing one into
 **`archive/handoffs/`** named for its date and phase or theme. The archive is append-only history;
 the two *current* docs live in root, all priors in the archive. (The convention starts at BIRTH,
-not at the first handoff: setup's final act archives the generator and the unfilled SESSION-PROMPT
-template to `archive/setup/`. An adopted project starts at ADOPTION instead: superseded
+not at the first handoff: setup's final act retires the `contract/` staging — generator and
+unfilled templates — to `archive/setup/`. An adopted project starts at ADOPTION instead: superseded
 originals and the `contract/` staging land in `archive/adoption/` — see ADOPT-PROMPT.md.
 The first handoff then archives the seeded HANDOFF.md and
 SESSION-PROMPT instance #1 to `archive/handoffs/`. Checkpoint delta passes do NOT archive; only

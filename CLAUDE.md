@@ -1,12 +1,14 @@
 # CLAUDE.md
 
-@AGENTS.md
+This folder holds the Build Contract — **unfilled**. There is no live contract here yet;
+do not treat the templates in `contract/` as law. Read README.md ("Three doors") and ask
+the human which applies:
 
-<!--
-AGENTS.md is the cross-tool standard and the single source of truth for this project's
-contract. Claude Code reads CLAUDE.md natively and follows the @-import above, so there is
-exactly one contract file and nothing that can drift out of sync with it.
+- **New project** → have the real project conversation, then follow `contract/SETUP-PROMPT.md`.
+- **Existing project** → copy the `contract/` folder into that project's root and follow
+  `contract/ADOPT-PROMPT.md` there. Never copy files in loose.
+- **Working on the Build Contract itself** → README.md is the map; the templates are the
+  product, and they ship into every stamped project — edit with care.
 
-Do not paste contract content into this file. Amend AGENTS.md.
-If this project will not run under Claude Code, delete this file.
--->
+At setup or adoption, this router is replaced by `contract/CLAUDE.md` — the one-line
+`@AGENTS.md` pointer a live project carries.
