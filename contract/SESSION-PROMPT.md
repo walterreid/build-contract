@@ -47,7 +47,9 @@ name the conflict and ask: exception or amendment? (AGENTS.md → Amendment Prot
 ## Your first act — the read-receipt gate (no edits, no proposals, before this)
 Read, in order: **AGENTS.md, BUILD.md, DESIGN.md, HANDOFF.md, README.md**
 [+ any archive file that carries narrative history]. Then play back, briefly, **in your
-own words from the docs — not from memory, and not by echoing this prompt.** These items
+own words from the docs — not from memory, not from context preloaded at session start
+(an auto-imported contract does not count as reading), and not by echoing this prompt.**
+These items
 deliberately do NOT state their own answers; reproducing a non-guessable specific is the
 gate, and parroting the prompt back isn't reading:
 

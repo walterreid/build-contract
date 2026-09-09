@@ -12,7 +12,8 @@ BUILD.md from what it *thought* was good.
 **Status: PARTIALLY VERIFIED — first real adoption: MERIDIAN (Roblox game, 24 commits,
 149 tests), 2026-09-09.** Ran clean end-to-end: two drift finds died in the rewrite, the
 receipt caught a staging stumble, and a strain on the README rule was raised, not
-swallowed (amended upstream, v1.2.3). Still unexecuted: a COLD adopter (MERIDIAN's was
+swallowed (amended upstream, v1.2.3). Completed its own bar 2026-09-09: a cold session
+passed the read-receipt gate, all seven items from disk, runnables run. Still unexecuted: a COLD adopter (MERIDIAN's was
 the incumbent), and a messy repo whose rules need excavating rather than tiering.
 Upgrade further as those run.
 

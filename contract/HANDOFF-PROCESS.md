@@ -93,8 +93,9 @@ full handoff rewrites do.)
 ### 1a. Writing the next SESSION-PROMPT (the construction rules — canonical copy)
 Every gate item in the rewritten SESSION-PROMPT.md must have ALL of these properties, or it
 isn't a gate item:
-  (a) **non-guessable** from training data or from the prompt itself — its answer exists only
-      in this repo's docs or state;
+  (a) **non-guessable** from training data, from the prompt itself, or from context
+      preloaded at session start (auto-imported files don't count as reading) — its answer
+      exists only in this repo's docs or state, read from disk this session;
   (b) at least two items **session-fresh** — things that changed this session (latest commit,
       newest dated BUILD.md block, the current live thread), so the gate can't be passed from
       a stale read;
