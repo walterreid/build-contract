@@ -1,6 +1,6 @@
 {
   "name": "build-contract",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "The Build Contract — a seven-document system for long, multi-session AI builds: tiered rules with a real amendment channel, a handoff maintained from day zero, and a read-receipt gate that proves a fresh session read the docs. The blueprint for the last 10%. Skills and templates only: no hooks, no servers, no executables — nothing runs outside your normal permission prompts. After installing, say 'set up the build contract' or type /build-contract:start.",
   "author": {
     "name": "Walter Reid",

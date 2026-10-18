@@ -1,0 +1,18 @@
+{
+  "name": "build-contract",
+  "description": "The Build Contract — a seven-document system for long, multi-session AI builds. The blueprint for the last 10%.",
+  "owner": {
+    "name": "Walter Reid",
+    "email": "walterreid@gmail.com",
+    "url": "https://github.com/walterreid"
+  },
+  "plugins": [
+    {
+      "name": "build-contract",
+      "source": "./contract",
+      "description": "Five skills wrapping the Build Contract's documents: start (the front door), setup (birth a new project's contract), adopt (bring it to a project already underway), handoff, and checkpoint. Skills and templates only — no hooks, no servers, nothing outside your permission prompts.",
+      "category": "context",
+      "tags": ["handoff", "multi-session", "context", "agents-md", "documentation", "adoption"]
+    }
+  ]
+}

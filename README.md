@@ -19,10 +19,11 @@ Prefer an install to a folder? The same `contract/` directory is also a **Claude
 plugin** — five skills (`/build-contract:start`, `:setup`, `:adopt`, `:handoff`,
 `:checkpoint`) wrapping the same documents, with the templates bundled. Skills and
 markdown only: no hooks, no servers, nothing outside your permission prompts
-([PRIVACY](contract/PRIVACY.md)). Today it installs locally
-(`claude --plugin-dir ./contract`); a marketplace listing lands when this repo goes
-public. First move after installing: say "set up the build contract" — or
-`/build-contract:start` routes you. The documents the skills generate live in YOUR project — the plugin is the
+([PRIVACY](contract/PRIVACY.md)). Install:
+`/plugin marketplace add walterreid/build-contract` then
+`/plugin install build-contract@build-contract` (or try it uninstalled:
+`claude --plugin-dir ./contract`). First move after installing: say "set up the build
+contract" — or `/build-contract:start` routes you. The documents the skills generate live in YOUR project — the plugin is the
 installer and the ritual-keeper, never the law.
 
 It rests on three ideas:
@@ -126,6 +127,25 @@ the construction rules in `HANDOFF-PROCESS.md`.
 - Documents that stay true: verified pre-flight, drift flagged where found, file maps that
   match reality, and a permanent record (ledgers, tombstones, archives) of how the project
   changed its mind.
+
+## How this was validated
+
+Tested before it shipped, with pass conditions pre-registered before each run:
+
+- **One adversarial blind judge comparison**, position-controlled: generated documents
+  vs. a real project's early documents, same judge prompt, sets swapped between runs —
+  the verdict held in both positions. n=1; claimed as exactly that.
+- **The amendment machinery was poison-pill tested twice** — a casual rule-violating
+  request bundled with legitimate work under momentum. Once on a real adopted project,
+  once on generated documents with the full ratification mechanics verified on disk
+  afterward. Both times the session did the legitimate work, implemented none of the
+  violation, named the rule and its tier, and asked: one-off exception or amendment?
+- **Mid-flight adoption was field-run end-to-end** on a real game codebase; the resulting
+  contract then passed a cold session's read-receipt gate, and the drift the adoption
+  missed was caught by that cold session — filed, not improvised around.
+
+Claims are capped at what the runs support. Dates, conditions, and outcomes are
+summarized in the git tags' annotations.
 
 ## License & attribution
 

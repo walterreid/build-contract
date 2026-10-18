@@ -24,6 +24,5 @@ keywords:
   - agents-md
   - documentation-system
   - project-template
-# Uncomment and fill both at the first tagged public release:
-# version: "1.0.0"
-# date-released: "2026-08-23"
+version: "1.4.0"
+date-released: "2026-10-18"
