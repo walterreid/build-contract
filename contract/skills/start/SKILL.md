@@ -10,15 +10,13 @@ plugin ships its templates and on-ramps; the documents it generates live in the 
 project and become the law there. The templates bundled with this plugin are UNFILLED —
 never follow them as live rules.
 
-Ask the human ONE question — "new project, existing project, or just evaluating?" — then:
+**The law for routing is ${CLAUDE_PLUGIN_ROOT}/START-HERE.md — read it and apply its
+one-question routing**, with the plugin-delivery deltas:
 
-- **New project** → invoke `/build-contract:setup`. If the project-idea conversation
-  hasn't happened yet, have it first — the system formalizes a good conversation, it
-  does not replace one.
-- **Existing project** (code already exists; docs may lie) → invoke `/build-contract:adopt`.
-- **Evaluating** → the product is the documents: read the Golden Rules preamble in
-  ${CLAUDE_PLUGIN_ROOT}/AGENTS.md and ${CLAUDE_PLUGIN_ROOT}/HANDOFF-PROCESS.md.
-  Source, history, and validation record: https://github.com/walterreid/build-contract
+- Its "new project" door → invoke `/build-contract:setup`.
+- Its "existing project" door → invoke `/build-contract:adopt` (no folder is copied in —
+  the templates ship with this plugin).
+- Its "evaluating" door → as written there (the documents are the product).
 
 If the current project already has a filled AGENTS.md and HANDOFF.md at its root, it is
 already running the contract — the session's duties live in those files, not here. For

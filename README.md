@@ -21,7 +21,8 @@ plugin** — five skills (`/build-contract:start`, `:setup`, `:adopt`, `:handoff
 markdown only: no hooks, no servers, nothing outside your permission prompts
 ([PRIVACY](contract/PRIVACY.md)). Today it installs locally
 (`claude --plugin-dir ./contract`); a marketplace listing lands when this repo goes
-public. The documents the skills generate live in YOUR project — the plugin is the
+public. First move after installing: say "set up the build contract" — or
+`/build-contract:start` routes you. The documents the skills generate live in YOUR project — the plugin is the
 installer and the ritual-keeper, never the law.
 
 It rests on three ideas:
