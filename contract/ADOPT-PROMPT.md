@@ -113,9 +113,10 @@ filling the five templates in `contract/`, with these deltas:
    (archived / merged into X / superseded by Y) and why. Future tombstones may cite these.
 2. **Move the ratified set to root:** the five generated documents; HANDOFF-PROCESS.md
    copied from `contract/` with its two bracketed slots filled (rule 3's verification
-   gate, practice 5's stores); `contract/tools/` to root `tools/`; and `contract/CLAUDE.md`
-   to root — the one-line `@AGENTS.md` pointer (an existing CLAUDE.md's content was mined
-   in Stage 1; the original is in the archive). The project's own README.md is never
+   gate, practice 5's stores); `contract/tools/` to root `tools/`; and write a root
+   CLAUDE.md holding exactly one import line — `@AGENTS.md` — plus a comment saying it is
+   a pointer, not a copy (an existing CLAUDE.md's content was mined in Stage 1; the
+   original is in the archive). The project's own README.md is never
    REPLACED — its front-page identity is the human's, and no template file stands in for
    it. *Editing* it is ordinary ratified work: drift found in Stage 1, or sections the
    new AGENTS.md now owns, get fixed like anything else — original archived first, human's

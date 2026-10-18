@@ -1,0 +1,23 @@
+# Validate the plugin manifest and skills on every push — the gate for the contract/
+# folder's third life as an installable plugin. Offline; nothing here needs a sign-in.
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Show the version the checks ran on
+        run: claude --version
+      - name: Validate the plugin
+        run: claude plugin validate --strict ./contract

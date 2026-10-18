@@ -138,9 +138,9 @@ After filling in all five documents:
    touch every primary doc. A document set that doesn't reference itself falls apart the
    first time only one file gets read.
 3. Remind me to move contract/HANDOFF-PROCESS.md to the repo root and fill its two
-   bracketed slots. For Claude Code, move contract/CLAUDE.md to root — a single
-   `@AGENTS.md` import line, so AGENTS.md remains the one contract with no copy to
-   drift.
+   bracketed slots. For Claude Code, write a root CLAUDE.md holding exactly one import
+   line — `@AGENTS.md` — plus a comment saying it is a pointer, not a copy: AGENTS.md
+   remains the one contract with no copy to drift.
 4. Retire the staging — the archive convention's first act, at birth: the five filled
    documents land at root; `contract/archive/` moves to the repo root (the skeleton
    ships inside the staging — assume nothing about the destination); then the entire

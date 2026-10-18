@@ -15,6 +15,15 @@ and the design pivots every real project eventually makes).
    → `contract/START-HERE.md` is the front door; ask your human the one question it
    gives you.
 
+Prefer an install to a folder? The same `contract/` directory is also a **Claude Code
+plugin** — five skills (`/build-contract:start`, `:setup`, `:adopt`, `:handoff`,
+`:checkpoint`) wrapping the same documents, with the templates bundled. Skills and
+markdown only: no hooks, no servers, nothing outside your permission prompts
+([PRIVACY](contract/PRIVACY.md)). Today it installs locally
+(`claude --plugin-dir ./contract`); a marketplace listing lands when this repo goes
+public. The documents the skills generate live in YOUR project — the plugin is the
+installer and the ritual-keeper, never the law.
+
 It rests on three ideas:
 
 1. **Rules are a contract between friends.** The AI enforces standing rules absolutely —
@@ -84,7 +93,7 @@ last steps — straight from the session transcript (see AGENTS.md "Compaction R
    not at the first handoff), leaving root holding only living documents. The archive
    skeleton ships inside `contract/` and moves to root as part of this step — the
    staging folder is fully self-contained.
-6. Claude Code: setup moves `contract/CLAUDE.md` to root — a single `@AGENTS.md` import
+6. Claude Code: setup writes a root `CLAUDE.md` holding a single `@AGENTS.md` import
    line, so AGENTS.md stays the one contract and no second copy can drift from it. Skip
    if the project won't use Claude Code.
 
