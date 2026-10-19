@@ -6,7 +6,11 @@ description: Birth a new project's Build Contract — generate AGENTS.md, BUILD.
 # Set up a new project
 
 **Precondition:** a real project-idea conversation in this session. If it hasn't happened,
-say so and have it first — Step 0 interrogates a conversation, not a vacuum.
+say so and have it first — Step 0 interrogates a conversation, not a vacuum. And if it
+emerges that there is no project at all — the human is exploring and picked "new project"
+as the nearest door — that is not a failed precondition: offer the sixty-second tour
+(START-HERE's just-looking door) and stand down. Nothing is generated until a real
+project exists.
 
 **The law for this procedure is ${CLAUDE_PLUGIN_ROOT}/SETUP-PROMPT.md. Read it and follow
 it exactly** — Step 0 (ask only questions whose answers change the documents, then STOP

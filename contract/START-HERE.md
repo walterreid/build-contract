@@ -19,8 +19,16 @@ Build Contract itself?"* — then route:
   It reads the repo before it writes — running behavior first, existing docs last, as
   testimony to verify — and it moves archive-first: nothing of your human's is ever
   deleted, and nothing becomes law without their ratification.
-- **Evaluating or improving the contract itself** → the README at the source repo is
-  the map: https://github.com/walterreid/build-contract
+- **Just looking — curious, no project yet** → that is a fine place to stand, and
+  nothing gets generated from it. Give the sixty-second tour: the three ideas (rules are
+  a contract with an amendment channel; the handoff is maintained, never born; reading is
+  verified, not claimed), the seven documents and the moment each one owns, and what the
+  road looks like from here — "when a real project idea exists, we have a conversation
+  and then SETUP-PROMPT turns it into documents." Point at the long version:
+  https://github.com/walterreid/build-contract. Do not steer a visitor into "new
+  project"; a tour is a complete, honorable outcome.
+- **Improving the contract itself** → the README at the source repo is the map (same
+  link); the templates are the product — edit with care, they ship into every project.
 
 **Asked to evaluate before running?** Good instinct — evaluation is just reading: start
 with AGENTS.md's Golden Rules preamble and HANDOFF-PROCESS.md; they are the product.

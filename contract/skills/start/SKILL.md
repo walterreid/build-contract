@@ -16,7 +16,9 @@ one-question routing**, with the plugin-delivery deltas:
 - Its "new project" door → invoke `/build-contract:setup`.
 - Its "existing project" door → invoke `/build-contract:adopt` (no folder is copied in —
   the templates ship with this plugin).
-- Its "evaluating" door → as written there (the documents are the product).
+- Its "just looking" and "improving the contract" doors → as written there. A visitor
+  with no project gets the tour and is never steered into "new project" — a tour is a
+  complete outcome.
 
 If the current project already has a filled AGENTS.md and HANDOFF.md at its root, it is
 already running the contract — the session's duties live in those files, not here. For
